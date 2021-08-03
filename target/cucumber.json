@@ -1,0 +1,766 @@
+[
+  {
+    "line": 5,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-03T17:48:03.199Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.everis.util.TestRule.beforeCenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Validar login no sistema com usuário incorreto",
+        "description": "",
+        "id": "navegar-no-aplicativo-alura-esporte;validar-login-no-sistema-com-usuário-incorreto",
+        "after": [
+          {
+            "result": {
+              "duration": 312000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.everis.util.TestRule.afterCenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 30579000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que acessei o app android",
+            "match": {
+              "location": "com.everis.steps.LoginSteps.acessarApp()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 3590000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "o login é realizado com usuário \"fulano\" e senha \"incorreto\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "fulano",
+                  "offset": 33
+                },
+                {
+                  "val": "incorreto",
+                  "offset": 50
+                }
+              ],
+              "location": "com.everis.steps.LoginSteps.validarCampo(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 142000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "a seguinte mensagem de erro \"Usuário ou senha inválidos\" é exibida na página de login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Usuário ou senha inválidos",
+                  "offset": 29
+                }
+              ],
+              "location": "com.everis.steps.LoginSteps.verificaMensagemDeErro(java.lang.String)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@android"
+          },
+          {
+            "name": "@teste_01"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-03T17:48:37.903Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.everis.util.TestRule.beforeCenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Cadastrar usuario no sistema com senha iguais",
+        "description": "",
+        "id": "navegar-no-aplicativo-alura-esporte;cadastrar-usuario-no-sistema-com-senha-iguais",
+        "after": [
+          {
+            "result": {
+              "duration": 46000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.everis.util.TestRule.afterCenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "que acessei o app android",
+            "match": {
+              "location": "com.everis.steps.LoginSteps.acessarApp()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 340000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "clicar no botão CADASTRAR USUARIO",
+            "match": {
+              "location": "com.everis.steps.LoginSteps.irParaCadastro()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 3758000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "preencher o nome com \"fulano\", senha \"pass123\" e confirmar senha com \"pass123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "fulano",
+                  "offset": 22
+                },
+                {
+                  "val": "pass123",
+                  "offset": 38
+                },
+                {
+                  "val": "pass123",
+                  "offset": 70
+                }
+              ],
+              "location": "com.everis.steps.RegisterSteps.preencherDadosDoCadastro(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 639000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "clicar no botão CADASTRAR",
+            "match": {
+              "location": "com.everis.steps.RegisterSteps.clicarParaCastarUsuario()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 999000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "o aplicativo volta para a tela inicial",
+            "match": {
+              "location": "com.everis.steps.RegisterSteps.verificaItemDaTelaInicial()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@android"
+          },
+          {
+            "name": "@teste_02"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-03T17:48:43.688Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.everis.steps.RegisterSteps.cadastrarUsuario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.everis.util.TestRule.beforeCenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Menssagens de erro ao cadastrar usuario",
+        "description": "",
+        "id": "navegar-no-aplicativo-alura-esporte;menssagens-de-erro-ao-cadastrar-usuario;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 41000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.everis.util.TestRule.afterCenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 185000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.everis.steps.RegisterSteps.voltarParaInicio()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "que acessei o app android",
+            "match": {
+              "location": "com.everis.steps.LoginSteps.acessarApp()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 233000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "clicar no botão CADASTRAR USUARIO",
+            "match": {
+              "location": "com.everis.steps.LoginSteps.irParaCadastro()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 3161000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "preencher o nome com \"fulano\", senha \"pass123\" e confirmar senha com \"pass123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "fulano",
+                  "offset": 22
+                },
+                {
+                  "val": "pass123",
+                  "offset": 38
+                },
+                {
+                  "val": "pass123",
+                  "offset": 70
+                }
+              ],
+              "location": "com.everis.steps.RegisterSteps.preencherDadosDoCadastro(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 705000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "clicar no botão CADASTRAR",
+            "match": {
+              "location": "com.everis.steps.RegisterSteps.clicarParaCastarUsuario()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 871000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "a seguinte mensagem de erro \"Usuario já Cadastrado\" é exibida na tela de cadastro",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Usuario já Cadastrado",
+                  "offset": 29
+                }
+              ],
+              "location": "com.everis.steps.RegisterSteps.verificaMensagemDeErro(java.lang.String)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@android"
+          },
+          {
+            "name": "@teste_03"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-03T17:48:48.890Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.everis.steps.RegisterSteps.cadastrarUsuario()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.everis.util.TestRule.beforeCenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 32,
+        "name": "Menssagens de erro ao cadastrar usuario",
+        "description": "",
+        "id": "navegar-no-aplicativo-alura-esporte;menssagens-de-erro-ao-cadastrar-usuario;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 33000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.everis.util.TestRule.afterCenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 181000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.everis.steps.RegisterSteps.voltarParaInicio()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "que acessei o app android",
+            "match": {
+              "location": "com.everis.steps.LoginSteps.acessarApp()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 779000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "clicar no botão CADASTRAR USUARIO",
+            "match": {
+              "location": "com.everis.steps.LoginSteps.irParaCadastro()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 3746000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "preencher o nome com \"beto\", senha \"pass123\" e confirmar senha com \"321pass\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "beto",
+                  "offset": 22
+                },
+                {
+                  "val": "pass123",
+                  "offset": 36
+                },
+                {
+                  "val": "321pass",
+                  "offset": 68
+                }
+              ],
+              "location": "com.everis.steps.RegisterSteps.preencherDadosDoCadastro(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 1271000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "clicar no botão CADASTRAR",
+            "match": {
+              "location": "com.everis.steps.RegisterSteps.clicarParaCastarUsuario()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 100000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "a seguinte mensagem de erro \"Senhas não conferem\" é exibida na tela de cadastro",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Senhas não conferem",
+                  "offset": 29
+                }
+              ],
+              "location": "com.everis.steps.RegisterSteps.verificaMensagemDeErro(java.lang.String)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@android"
+          },
+          {
+            "name": "@teste_03"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-03T17:48:55.003Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.everis.steps.LoginSteps.cadastrarUsuario()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.everis.util.TestRule.beforeCenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 36,
+        "name": "Validar login no sistema com usuário cadastrado",
+        "description": "",
+        "id": "navegar-no-aplicativo-alura-esporte;validar-login-no-sistema-com-usuário-cadastrado",
+        "after": [
+          {
+            "result": {
+              "duration": 34000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.everis.util.TestRule.afterCenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 207000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.everis.steps.LoginSteps.fazerLogOff()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "que acessei o app android",
+            "match": {
+              "location": "com.everis.steps.LoginSteps.acessarApp()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 3525000000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "o login é realizado com usuário \"fulano\" e senha \"pass123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "fulano",
+                  "offset": 33
+                },
+                {
+                  "val": "pass123",
+                  "offset": 50
+                }
+              ],
+              "location": "com.everis.steps.LoginSteps.validarCampo(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 1191000000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "a tela de produtos é exibida",
+            "match": {
+              "location": "com.everis.steps.ProductsSteps.verificarTelaDeProdutos()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@android"
+          },
+          {
+            "name": "@teste_04"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-03T17:48:59.963Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.everis.steps.ProductsSteps.cadastrarUsuario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.everis.util.TestRule.beforeCenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 42,
+        "name": "Realizar uma compra na tela de produtos",
+        "description": "",
+        "id": "navegar-no-aplicativo-alura-esporte;realizar-uma-compra-na-tela-de-produtos",
+        "after": [
+          {
+            "result": {
+              "duration": 39000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.everis.util.TestRule.afterCenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "que acessei o app android",
+            "match": {
+              "location": "com.everis.steps.LoginSteps.acessarApp()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 3192000000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "o login é realizado com usuário \"fulano\" e senha \"pass123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "fulano",
+                  "offset": 33
+                },
+                {
+                  "val": "pass123",
+                  "offset": 50
+                }
+              ],
+              "location": "com.everis.steps.LoginSteps.validarCampo(java.lang.String,java.lang.String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 888000000,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "clicar no produto \"Chuteira\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Chuteira",
+                  "offset": 19
+                }
+              ],
+              "location": "com.everis.steps.ProductsSteps.clicarNoProduto(java.lang.String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 795000000,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "clicar para comprar",
+            "match": {
+              "location": "com.everis.steps.ProductsSteps.continuarcompra()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3585000000,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "preencher com numero do cartão \"123456789\", data de validade \"01/08/2022\" e cvc \"0800\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "123456789",
+                  "offset": 32
+                },
+                {
+                  "val": "01/08/2022",
+                  "offset": 62
+                },
+                {
+                  "val": "0800",
+                  "offset": 81
+                }
+              ],
+              "location": "com.everis.steps.ProductsSteps.preencherDadosDoCarta(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 984000000,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "confirmar pagamento",
+            "match": {
+              "location": "com.everis.steps.ProductsSteps.confirmarPagamento()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 1759000000,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "o produto aparece na lista de pagamentos",
+            "match": {
+              "location": "com.everis.steps.ProductsSteps.verificaProdutoNaTelaDePagamento()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@android"
+          },
+          {
+            "name": "@teste_05"
+          }
+        ]
+      }
+    ],
+    "name": "Navegar no aplicativo Alura esporte",
+    "description": "",
+    "id": "navegar-no-aplicativo-alura-esporte",
+    "keyword": "Funcionalidade",
+    "uri": "classpath:features/UIAndroidTests.feature",
+    "tags": [
+      {
+        "name": "@android",
+        "type": "Tag",
+        "location": {
+          "line": 4,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
