@@ -1,6 +1,6 @@
 ## Projeto Alura esporte
 
-[![Build Status][travis-image]][travis-url]
+![Build Status][travis-image]
 
 foram realizados os seguntes testes:
 
@@ -19,7 +19,5 @@ O teste tem como objetivo verificar as funcionalidades do projeto alura esporte,
 - [x] Dispositivo android
 - [x] Appium
 
-
-[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
 [travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
 
