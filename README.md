@@ -11,7 +11,7 @@ foram realizados os seguntes testes:
 
 ## Descrição
 
-O teste tem como objetivo ferificar as funcionalidades do projeto alura esporte, bem como validar o cadastro e login.
+O teste tem como objetivo verificar as funcionalidades do projeto alura esporte, bem como validar o cadastro e o login.
 
 ## Requisitos minimos para o teste
 
